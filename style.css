@@ -5,12 +5,19 @@ body * {
     font-family: 'Raleway', sans-serif;
 }
 
+.container {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 2vw;
+}
+
 .remaining-budget-container {
     text-align: center;
     color: white;
     width: 100%;
-    background-color: #555b6e;
+    background-color: #06a10b;
     padding: 5vw;
+    border-radius: 10px;
 }
 
 #remaining-budget {
@@ -23,5 +30,11 @@ span#figure {
     display: block;
     font-size: 8vw;
     margin: 2vw;    
+}
+
+.category-card {
+    display: flex;
+    flex-direction: column;
+    padding: 1vw;
 }
 

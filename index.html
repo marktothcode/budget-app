@@ -14,21 +14,50 @@
 </head>
 
 <body>
+    <div class="container">
+        <div class='remaining-budget-container'>
+            <div id="current-date"></div>
+            <h1 id='remaining-budget'>Remaining budget:
+                <br />
+                <span id='figure'>£1000</span>
+            </h1>
+        </div>
 
-    <div class='remaining-budget-container'>
-        <div id="current-date"></div>
-        <h1 id='remaining-budget'>Remaining budget:
-            <br />
-            <span id='figure'>£1000</span>
-        </h1>
-    </div>
+        <div class="categories-container">
 
-    <div class="categories-container">
-        <div class=''>Accomodation</div>
-        <div class=''>Bills</div>
-        <div class=''>Dining Out</div>
-        <div class=''>Clothes</div>
-        <div class=''>Medication</div>
+            <div class='category-card'>
+                <label for="accomodation">Accomodation</label>
+                <meter id="accomodation" name="accomodation" min="0" max="700" low="100" high="700" optimum="550"
+                    value="150">
+                </meter>
+            </div>
+
+            <div class='category-card'>
+                <label for="bills">Bills</label>
+                <meter id="bills" name="bills" min="0" max="700" low="100" high="700" optimum="550" value="150">
+                </meter>
+            </div>
+
+            <div class='category-card'>
+                <label for="dining-out">Dining Out</label>
+                <meter id="dining-out" name="dining-out" min="0" max="700" low="100" high="700" optimum="550"
+                    value="150">
+                </meter>
+            </div>
+
+            <div class='category-card'>
+                <label for="clothes">Clothes</label>
+                <meter id="clothes" name="clothes" min="0" max="700" low="100" high="700" optimum="550" value="150">
+                </meter>
+            </div>
+            <div class='category-card'>
+                <label for="clothes">Medication</label>
+                <meter id="clothes" name="clothes" min="0" max="700" low="100" high="700" optimum="550" value="150">
+                </meter>
+            </div>
+
+        </div>
+
     </div>
 
 
