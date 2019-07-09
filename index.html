@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/node_modules/bulma/css/bulma.css">
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <title>Budget app</title>
@@ -15,54 +16,65 @@
 
 <body>
     <div class="container">
+
         <div class='remaining-budget-container'>
             <div id="current-date"></div>
-            <h1 id='remaining-budget'>Remaining budget:
+            <h1 id='remaining-budget'>Remaining budget for the month:
                 <br />
                 <span id='figure'>£1000</span>
             </h1>
+            <div class='remaining-budget-breakdown'>
+                <div class="remaining-budget-breakdown-left">
+                    <p>£50 month total</p>
+                </div>
+                <div class="remaining-budget-breakdown-right">
+                    <p>£100 monthly budget</p>
+                </div>
+            </div>
         </div>
 
         <div class="categories-container">
-
             <div class='category-card'>
                 <label for="accomodation">Accomodation</label>
-                <meter id="accomodation" name="accomodation" min="0" max="700" low="100" high="700" optimum="550"
-                    value="300">300
-                </meter>
+                <div class="progress-wrapper">
+                    <progress class="progress is-primary" value="1" max="100"></progress>
+                    <p class="progress-value has-text-white">1%</p>
+                </div>
             </div>
 
             <div class='category-card'>
                 <label for="bills">Bills</label>
-                <meter id="bills" name="bills" min="0" max="700" low="100" high="700" optimum="550" value="450">
-                </meter>
+                <div class="progress-wrapper">
+                    <progress class="progress is-primary" value="75" max="100"></progress>
+                    <p class="progress-value has-text-white">75%</p>
+                </div>
             </div>
 
             <div class='category-card'>
                 <label for="dining-out">Dining Out</label>
-                <meter id="dining-out" name="dining-out" min="0" max="700" low="100" high="600" optimum="550"
-                    value="699">
-                </meter>
+                <div class="progress-wrapper">
+                    <progress class="progress is-primary" value="50" max="100"></progress>
+                    <p class="progress-value has-text-white">50%</p>
+                </div>
             </div>
 
             <div class='category-card'>
                 <label for="clothes">Clothes</label>
-                <meter id="clothes" name="clothes" min="0" max="700" low="100" high="700" optimum="550" value="150">
-                </meter>
+                <div class="progress-wrapper">
+                    <progress class="progress is-primary" value="60" max="100"></progress>
+                    <p class="progress-value has-text-white">60%</p>
+                </div>
             </div>
             <div class='category-card'>
                 <label for="clothes">Medication</label>
-                <meter id="clothes" name="clothes" min="0" max="700" low="100" high="700" optimum="550" value="377">
-                </meter>
+                <div class="progress-wrapper">
+                    <progress class="progress is-primary" value="25" max="100"></progress>
+                    <p class="progress-value has-text-white">25%</p>
+                </div>
             </div>
-
         </div>
 
-    </div>
-
-
-
-    <script src='app.js'></script>
+        <script src='app.js'></script>
 </body>
 
 </html>
